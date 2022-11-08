@@ -1,5 +1,5 @@
 # PBL
-A demo website created to monitor the performance of IGDB API in RESTful and gRPC services.
+A demo website created to implement the IGDB API and monitor its performance in RESTful and gRPC services.
 
 This website uses the IGDB API made by twitch to gain the information about any video-game with its cover picture and a link for the info page.
 It calls the API with the 'POST' method and takes information listed in the documentation. This information is "cover", "name", "url" and "screenshots" and is displayed on the website. 

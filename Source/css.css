@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(10, 5, 5);
+    background-image: url('bg-img.jpg');
+}
+@font-face{
+	font-family:myfont;
+	src:url(Ranger.otf);	
+}
+/*--- HEADING ---*/
+.heading1{
+    text-align:center;
+    position:relative;
+    top:0px;
+    right:5px;
+    font-family: 'myfont';
+    font-size: 60px;
+    color: #2c464b;
+    text-shadow: 0 0 2px #A5F1FF, 0 0 5px #A5F1FF,
+             0 0 10px #A5F1FF, 0 0 10px #A5F1FF,
+             0 0 10px #A5F1FF;
+             letter-spacing: 7px;
+}
+/*--- SEARCH BOX ---*/
+.form-control {
+    position: relative;
+    top:-50px;
+    left:530px;
+    margin: 20px 0 40px;
+    width: 300px;
+  }
+  .form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight:300px;
+  }
+  .form-control input:focus,
+  .form-control input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+  }
+  .form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+  }
+  .form-control label span {
+    display: inline-block;
+    font-size: 20px;
+    min-width: 5px;
+    color: #fff;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .form-control input:focus+label span,
+  .form-control input:valid+label span {
+    color: lightblue;
+    transform: translateY(-30px);
+  }
+  /*--- SEARCH BUTTON ---*/
+.searchbtn{
+    position:relative;
+    left:780px;
+    bottom:140px;
+    background: transparent;
+    border: none;
+}
+/*--- CONTENT DISPLAYING ---*/
+.games {
+    height:fit-content;
+    width:fit-content;
+    display: flex;
+    flex-wrap: wrap; 
+    }
+    .games li {
+        flex: 1; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        list-style: none; 
+        padding: 20px;
+        border-radius: 12px; 
+        text-align: center; 
+        background-color:rgba(17, 15, 15, 0.8);
+    }
+    .games li img {
+        height: 100%; 
+        border-radius: 12px; 
+    }
+    .games li h3 {
+        color: whitesmoke;
+        font-size: 1.8em; 
+        font-family: "Oswald", sans-serif;
+        inline-size: 250px;
+        overflow-wrap: break-word;
+    }
+    .games li a{
+        font-size: 1.8em; 
+        font-family: "Oswald", sans-serif;
+        color: gold;
+    }

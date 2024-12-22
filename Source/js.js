@@ -1,6 +1,6 @@
 var myHeaders = new Headers();
-myHeaders.append("Client-ID", "gu39drx62b3fzad89pbxbsehyf1b9q");
-myHeaders.append("Authorization", "Bearer wvxep1worzzkifjnr88a85tn64u8nx");
+myHeaders.append("Client-ID", "YOUR CLIENT ID");   //Obtain these API Keys from the Official Documentation
+myHeaders.append("Authorization", "Bearer YOUR CLIENT SECRET");
 myHeaders.append("Content-Type", "application/json");
 
 let html = ""; 
@@ -46,7 +46,3 @@ document.querySelector(".search").addEventListener("keyup", function(event) {
         movie_search();
     }
 });
-
-
-  
-//cors-access: https://cors-anywhere.herokuapp.com/corsdemo
